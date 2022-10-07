@@ -367,7 +367,7 @@ body {
 		padding: 2em;
 		border-radius: 8px;
 		box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
-		transition: transform .3s;
+		transition: transform 0.3s;
 		&:hover {
 			transform: scale(0.95);
 		}
@@ -394,6 +394,50 @@ body {
 		margin-bottom: 1em;
 		font-size: 1.4rem;
 		color: $dark;
+	}
+}
+
+// CONTACT
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+	.white-block-left {
+		background-color: $dark;
+	}
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+	&__form-input {
+		@include contactForm;
+	}
+	&__form-textarea {
+		@include contactForm;
+		min-width: 100%;
+		max-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		padding: 0.8em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		background-color: $main-color;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+
+		&::before {
+			background-color: $secondary-color;
+		}
 	}
 }
 
