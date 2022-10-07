@@ -376,7 +376,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +386,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
   border-radius: 8px;
   opacity: 0;
   -webkit-transform: rotateY(180deg);
@@ -491,6 +491,20 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
+  .islands__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .islands__card {
+    margin: 1em;
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -536,5 +550,10 @@ body {
   .hero-img hr {
     width: 60%;
     max-width: 900px;
+  }
+}
+@media (min-width: 1100px) {
+  .islands__card {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
